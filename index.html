@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An API for listing a GitHub handle's repositories">
+    <title>GitHub Repo Search API</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+    <h1>GitHub Repository Finder</h1>
+
+    <form id="repo-form">
+        <label for="github-handle">Enter a GitHub Account you'd like to view the repositories for:</label>
+        <br><br>
+        <input type="text" id="github-handle" value="" placeholder="enter a GitHub account name" required>
+        <br><br>
+        <button type="submit">Search</button>
+    </form>
+
+    <p id="search-error"></p>
+
+    <section id="repo-results">
+        <h2 id="results-title"></h2>
+        <ul id="results-list">
+        </ul>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
