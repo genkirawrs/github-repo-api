@@ -1,7 +1,6 @@
 'use strict';
 
 function displayResults(results,handle){
-    console.log(results);
     if(results.length < 1){
         $('#search-error').text(`${handle} Does not have any repositories available.`);
     }else{
